@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--    Font Awesome 5.9-->
+    <script src="https://kit.fontawesome.com/9c7309bfe2.js"></script>
+    <!--    Bootstrap 4.3.1-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cebuana Lhuillier</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Top -->
+        <div class="top-header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 d-flex align-items-center">
+                        <!-- Eng-Currency-Contact-Start -->
+                        <div class="eng-curr-cont">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle p-2" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        English
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link p-2">
+                                        $ USD
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link p-2">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Eng-Currency-Contact-End -->
+                    </div>
+                    <div class="col-4 text-center">
+                        <!-- Social Start -->
+                        <div class="social p-2">
+                            <a href="#">
+                                <img src="img/facebook-top.png" width="20px" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="img/twitter-top.png" width="20px" alt="" />
+                            </a>
+                            <a href="#"><img src="img/instagram-top.png" width="20px" alt="" /></a>
+                        </div>
+                        <!-- Social End -->
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <!-- Sign In-Registration-Wishlist-Account-Start -->
+                        <div class="sign-reg-wish-acc">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <!-- Link trigger modal -->
+                                    <a href="#" class="nav-link p-2" data-toggle="modal" data-target="#exampleModal">
+                                        Sign In
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h2>Welcome to <span>CEBUANA!</span></h2>
+                                                        <h4>Please login.</h4>
+                                                        <form>
+                                                            <div class="form-group mt-3">
+                                                                <label for="formGroupExampleInput">Email Address:
+                                                                    *</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput"
+                                                                    placeholder="Email address">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="formGroupExampleInput2">Password: *</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput2" placeholder="Password">
+                                                            </div>
+                                                        </form>
+                                                        <ul class="nav d-flex justify-content-between">
+                                                            <li>
+                                                                <input type="checkbox" name="checkbox" id="checkbox">
+                                                                <label for="checkbox">Remember me!</label>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Forgot your password?</a>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="btn btn-primary d-block mb-3">Login</button>
+                                                        <a href="#" class="create-account">Or Create An Account</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- Link trigger modal -->
+                                    <a href="#" class="nav-link p-2" data-toggle="modal" data-target="#exampleModal1">
+                                        Register
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h2>Welcome to <span>CEBUANA!</span></h2>
+                                                        <h4>Please login.</h4>
+                                                        <form>
+                                                            <div class="form-group mt-3">
+                                                                <label for="formGroupExampleInput">Full name: *</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput" placeholder="Full Name">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="formGroupExampleInput2">Email Address:
+                                                                    *</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput2"
+                                                                    placeholder="Email Address">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="formGroupExampleInput3">Password: *</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="formGroupExampleInput3" placeholder="Password">
+                                                            </div>
+                                                        </form>
+                                                        <ul class="nav d-flex justify-content-start">
+                                                            <li>
+                                                                <input type="checkbox" name="checkbox" id="checkbox">
+                                                                <label for="checkbox">I want to receive exclusive offers
+                                                                    & promotions from Cebuana</label>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <button
+                                                                    class="btn btn-primary d-block mb-3">Signup</button>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p>By clicking "SIGN UP" I agree to Cebuana Privacy
+                                                                    Policy</p>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="create-account">Already Member? <br> Login
+                                                            Here.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link p-2">My Wishlist</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link p-2">My Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Sign In-Registration-Wishlist-Account-End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top End -->
+        <!-- Middle -->
+        <div class="top-header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 d-flex justify-content-start">
+                        <!-- Call-mail-start -->
+                        <div class="call-mail d-flex">
+                            <!-- Call -->
+                            <div class="call-outer d-flex align-items-center mr-2">
+                                <div class="mr-1">
+                                    <img src="img/phone-logo.png" class="align-self-center" width="40px" alt="" />
+                                </div>
+                                <div class="ml-1">
+                                    <p class="heading p-0 m-0">Call Us At:</p>
+                                    <p class="text p-0 m-0">0934 8998 2438</p>
+                                </div>
+                            </div>
+                            <!-- Call End -->
+                            <!-- Mail -->
+                            <div class="mail-outer d-flex align-items-center ml-2">
+                                <div class="mr-1">
+                                    <img src="img/mail-logo.png" class="align-self-center" width="40px" alt="" />
+                                </div>
+                                <div class="ml-1">
+                                    <p class="heading m-0">Email Us At:</p>
+                                    <p class="text m-0">sales@jewelry.com</p>
+                                </div>
+                            </div>
+                            <!-- Main End -->
+                        </div>
+                        <!-- Call-mail-end -->
+                    </div>
+                    <div class="col-2 text-center p-2">
+                        <!-- Logo-Start -->
+                        <div class="logo">
+                            <img src="img/logo.png" class="img-fluid" width="200px" alt="" />
+                        </div>
+                        <!-- Logo-end -->
+                    </div>
+                    <div class="col-5 d-flex justify-content-end">
+                        <!-- Search-cart-start -->
+                        <div class="search-cart d-flex">
+                            <form class="form-inline my-2 my-lg-0 mr-3">
+                                <input class="form-control search-input" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <button class="btn search-button my-2 my-sm-0" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                            <div class="align-self-center">
+                                <button class="btn cart-button">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Search-cart-end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Middle end -->
+        <!-- Last -->
+        <div class="top-header-end">
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto w-100 justify-content-between align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link btn dropdown-toggle d-flex align-items-center" href="#"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img src="img/bullet-point.svg" class="img-fluid mr-1" alt="" />
+                                    Mindanao Region
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEW IN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PRODUCTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LATEST COLLECTION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ACCESSORIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">STYLE EDIT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GIFTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">DEALS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Last end -->
+    </header>
+
+
+    <div class="discover">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="discover__jewelery mt-5 mb-5">
+                        <h1>
+                            Discover the unique World of <span>JEWELRY</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bread--crumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Product Page</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="product--search">
+        <div class="container">
+            <div class="col-2">
+                <div class="product--filters">
+                    <h1 class="filter--heading">
+                        Categories
+                    </h1>
+                    <hr>
+                    <div class="filter--search d-flex position-relative">
+                        <input id="search" class="search__input" type="text" placeholder="Search . . .">
+                        <a href="javascript:void(0);">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="filter--collapse">
+
+                        <ul class="collapse__outer">
+                            <li>
+                                <a class="filter--font" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Ring <span id="amount">(257)</span>
+                                </a>
+
+                                <div class="collapse" id="collapseExample">
+                                    <ul class="collapse__inner">
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Stones <span id="Stones">(67)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Anniversary <span
+                                                    id="Anniversary">(43)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Engagement <span id="Engagement">(33)</span></a>
+                                        </li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Fashion <span id="Fashion">(31)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Vintage <span id="Vintage">(13)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Wedding <span id="Wedding">(25)</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="filter--font" data-toggle="collapse" href="#collapseExample1" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Bracelet <span id="amount">(127)</span>
+                                </a>
+
+                                <div class="collapse" id="collapseExample1">
+                                    <ul class="collapse__inner">
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Stones <span id="Stones">(67)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Anniversary <span
+                                                    id="Anniversary">(43)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Engagement <span id="Engagement">(33)</span></a>
+                                        </li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Fashion <span id="Fashion">(31)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Vintage <span id="Vintage">(13)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Wedding <span id="Wedding">(25)</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="filter--font" data-toggle="collapse" href="#collapseExample2" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Earrings <span id="amount">(350)</span>
+                                </a>
+
+                                <div class="collapse" id="collapseExample2">
+                                    <ul class="collapse__inner">
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Stones <span id="Stones">(67)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Anniversary <span
+                                                    id="Anniversary">(43)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Engagement <span id="Engagement">(33)</span></a>
+                                        </li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Fashion <span id="Fashion">(31)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Vintage <span id="Vintage">(13)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Wedding <span id="Wedding">(25)</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="filter--font" data-toggle="collapse" href="#collapseExample3" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Necklace <span id="amount">(486)</span>
+                                </a>
+
+                                <div class="collapse" id="collapseExample3">
+                                    <ul class="collapse__inner">
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Stones <span id="Stones">(67)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Anniversary <span
+                                                    id="Anniversary">(43)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Engagement <span id="Engagement">(33)</span></a>
+                                        </li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Fashion <span id="Fashion">(31)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Vintage <span id="Vintage">(13)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Wedding <span id="Wedding">(25)</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="filter--font" data-toggle="collapse" href="#collapseExample4" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Pendants <span id="amount">(259)</span>
+                                </a>
+
+                                <div class="collapse" id="collapseExample4">
+                                    <ul class="collapse__inner">
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Stones <span id="Stones">(67)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Anniversary <span
+                                                    id="Anniversary">(43)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Engagement <span id="Engagement">(33)</span></a>
+                                        </li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Fashion <span id="Fashion">(31)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Vintage <span id="Vintage">(13)</span></a></li>
+                                        <li class="filter--font">
+                                            <a href="javascript:void;">Wedding <span id="Wedding">(25)</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter--heading">
+                        Filter Product
+                    </div>
+                    <hr>
+                    <div class="filter--subheading">
+                        By Price
+                    </div>
+                    <hr>
+                    <div class="filter--checkboxes d-flex flex-wrap align-items-center">
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> $0.00 - $84.99 (1904)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> $85.00 - $119.99 (1799)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> $120.00 - $219.99 (1842)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> $220.00 - $799.99 (1827)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> $800.00 and above (1793)
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter--minmax mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <input type="text" class="form-control w-25">
+                            <p class="m-0 filter--font">to</p>
+                            <input type="text" class="form-control w-25">
+                            <button class="btn btn-primary filter--button">
+                                Sort
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filter--subheading">
+                        By Weight
+                    </div>
+                    <hr>
+                    <div class="filter--checkboxes d-flex flex-column flex-wrap">
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 0 - 2 gms
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 2 - 5 gms
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 5 - 10 gms
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 10 - 20 gms
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 20 - 30 gms
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> > 30 gms
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter--minmax mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <input type="text" class="form-control w-25">
+                            <p class="m-0 filter--font">to</p>
+                            <input type="text" class="form-control w-25">
+                            <button class="btn btn-primary filter--button">
+                                Sort
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filter--subheading">
+                        By Carat
+                    </div>
+                    <hr>
+                    <div class="filter--dropdown mb-3">
+                        <select name="Carats">
+                            <option value="1">1 Carat</option>
+                            <option value="2">2 Carats</option>
+                            <option value="3">3 Carats</option>
+                            <option value="4">4 Carats</option>
+                            <option value="5">5 Carats</option>
+                        </select>
+                    </div>
+                    <div class="filter--subheading">
+                        By Weight
+                    </div>
+                    <hr>
+                    <div class="filter--colors mb-3">
+                        <ul class="nav">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-square-full"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter--subheading">
+                        By Weight
+                    </div>
+                    <hr>
+                    <div class="filter--checkboxes mb-3">
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 23
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 21
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 11
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 13
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 17
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> 15
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value=""> FR
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="filter--font">
+                                <input type="checkbox" value="">19
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter--heading">
+                        POPULAR TAGS
+                    </div>
+                    <hr>
+                    <div class="filter--popular mb-3">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="filter--font">Love</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Silver</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Ring</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Art</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Rings</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Design</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Jewels</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Luxury</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Bracelets</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Diamonds</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Gemstones</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Beautiful</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Instagood</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Handmade</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Jewelerydesigner</a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter--font">Jewelrydesign</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-10">
+                <h1>hello</h1>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="primary-bg">
+                        <h4>
+                            Trust Worthy Quality & Products
+                        </h4>
+                        <a href="#">Find Out More ></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="primary-bg">
+                        <h4>
+                            Guaranteed Secure Payment Methods
+                        </h4>
+                        <a href="#">Find Out More ></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="primary-bg">
+                        <h4>
+                            Around the clock customer support
+                        </h4>
+                        <a href="#">Find Out More ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="newsletter mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 left-section">
+                    <h4>
+                        Sign Up to our Newsletter.
+                    </h4>
+                    <form class="form-inline">
+                        <input type="email" class="form-control mb-2" id="email" placeholder="Email Address">
+                        <button type="submit" class="btn btn-primary mb-2">SIGN UP NOW!</button>
+                    </form>
+                </div>
+
+                <div class="col-6 right-section">
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <h5>
+                                Great Value
+                            </h5>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5>
+                                Great Value
+                            </h5>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5>
+                                Great Value
+                            </h5>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>COMPANY INFO</h4>
+                    <ul>
+                        <li><a href="#">About Cebuana</a></li>
+                        <li><a href="#">Sell to Cebuana</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Authenticity Guarantee</a></li>
+                        <li><a href="#">Customer Reviews</a></li>
+                        <li><a href="#">Cebuana Coupon Codes</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>HELP CENTER</h4>
+                    <ul>
+                        <li><a href="#">Order Information</a></li>
+                        <li><a href="#">Shipping Options</a></li>
+                        <li><a href="#">International Shipping</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Returning & Exchanging</a></li>
+                        <li><a href="#">Product Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>MY ACCOUNT</h4>
+                    <ul>
+                        <li><a href="#">Manage Your Account</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Order Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>CONTACT INFO</h4>
+                    <ul>
+                        <li>Call Us: <span class="contact">123-456-7890</span></li>
+                        <li>Email: <span class="contact">sales@cebuana.com</span></li>
+                        <li>Hours: <span class="contact">Mon-Sat 9am - 8pm <br> Sun 9am - 5pm</span></li>
+                        <li>Address: <span class="contact">Place your complete office address right here</span></li>
+                        <li>Join Us:
+                            <ul class="nav">
+                                <li><a href="#"><img src="img/facebook-top.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/twitter-top.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/instagram-top.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="credits">
+        <div class="container">
+            <div class="copyrights-terms d-flex justify-content-between">
+                <div class="copyrights">
+                    <p>
+                        &copy; 2019, <a href="#">CEBUANA</a>. ALL RIGHTS RESERVED
+                    </p>
+                </div>
+                <div class="terms">
+                    <ul class="nav">
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        |
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        |
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>

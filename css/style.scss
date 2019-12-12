@@ -1,0 +1,1005 @@
+// Generic
+$colors: (
+  cubana-red: #ee4131,
+  cubana-gold: #d4af37,
+  cubana-primary: #002b44,
+  cubana-gray: #f2f2f2,
+  cubana-border: #ebebeb,
+  cubana-icons: #a5a5a5,
+  cubana-carousel-indicator: #707070,
+  cubana-code: #406073,
+  cubana-gray-dark: #999999,
+  no-color: #fff
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+/**************************************
+                Header
+**************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
+
+.primary-bg {
+  background-color: color(cubana-primary);
+}
+.red-bg {
+  background-color: color(cubana-red);
+}
+
+/**********************************
+            Home Page CSS
+**********************************/
+.header {
+  .top-header-top {
+    background-color: color(cubana-red);
+    a {
+      color: color(no-color);
+      font-size: 12px;
+    }
+    .sign-reg-wish-acc {
+      #exampleModal {
+        overflow: hidden;
+        .modal-content {
+          background-image: url(../img/login-modal-bg.jpg);
+          background-size: cover;
+          padding: 40px;
+          h2,
+          h4 {
+            color: color(cubana-primary);
+            span {
+              font-weight: bold;
+            }
+          }
+          form {
+            label {
+              color: color(cubana-primary);
+              padding-left: 0.75rem;
+            }
+            input {
+              color: color(no-color);
+              background-color: color(cubana-primary);
+              border-color: color(cubana-primary);
+            }
+            input::placeholder {
+              color: color(no-color);
+            }
+          }
+          ul {
+            padding-left: 0.75rem;
+            font-size: 10px;
+            margin-bottom: 1rem;
+            li {
+              color: color(cubana-primary);
+              input[type="checkbox"] + label {
+                display: block;
+              }
+              input[type="checkbox"] {
+                display: none;
+              }
+              input[type="checkbox"] + label::before {
+                content: "\2713";
+                border: 0.1rem solid color(cubana-primary);
+                display: inline-block;
+                margin-right: 0.2em;
+                padding: 0px 3.3px;
+                color: transparent;
+                vertical-align: bottom;
+              }
+              input[type="checkbox"]:checked + label::before {
+                background-color: color(cubana-primary);
+                color: color(no-color);
+              }
+            }
+            a {
+              font-size: inherit;
+            }
+          }
+          .btn {
+            background-color: color(cubana-gold);
+            border-color: color(cubana-gold);
+            font-weight: bold;
+            width: 100%;
+            text-transform: uppercase;
+          }
+          a {
+            color: color(cubana-primary);
+            text-decoration: none;
+          }
+          .create-account {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      #exampleModal1 {
+        overflow: hidden;
+        .modal-content {
+          background-image: url(../img/register-modal-bg.jpg);
+          background-size: cover;
+          padding: 40px;
+          h2,
+          h4 {
+            color: color(cubana-primary);
+            span {
+              font-weight: bold;
+            }
+          }
+          form {
+            label {
+              color: color(cubana-primary);
+              padding-left: 0.75rem;
+            }
+            input {
+              color: color(no-color);
+              background-color: color(cubana-primary);
+              border-color: color(cubana-primary);
+            }
+            input::placeholder {
+              color: color(no-color);
+            }
+          }
+          ul {
+            padding-left: 0.75rem;
+            font-size: 10px;
+            margin-bottom: 1rem;
+            li {
+              color: color(cubana-primary);
+              input[type="checkbox"] + label {
+                display: block;
+              }
+              input[type="checkbox"] {
+                display: none;
+              }
+              input[type="checkbox"] + label::before {
+                content: "\2713";
+                border: 0.1rem solid color(cubana-primary);
+                display: inline-block;
+                margin-right: 0.2em;
+                padding: 0px 3.3px;
+                color: transparent;
+                vertical-align: bottom;
+              }
+              input[type="checkbox"]:checked + label::before {
+                background-color: color(cubana-primary);
+                color: color(no-color);
+              }
+            }
+            a {
+              font-size: inherit;
+            }
+          }
+          .btn {
+            background-color: color(cubana-gold);
+            border-color: color(cubana-gold);
+            font-weight: bold;
+            width: 100%;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 10px;
+          }
+          a {
+            color: color(cubana-primary);
+            text-decoration: none;
+          }
+          .create-account {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .top-header-middle {
+    .call-mail {
+      font-size: 14px;
+      .heading {
+        color: color(cubana-red);
+        font-weight: 600;
+      }
+      .text {
+        color: color(cubana-primary);
+        font-weight: 600;
+      }
+    }
+    .search-cart {
+      .search-input {
+        border-radius: 0px;
+        font-size: 14px;
+        height: 38px;
+        width: 250px;
+      }
+      .search-button {
+        border-radius: 0px;
+        border: 1px solid color(cubana-primary);
+        color: color(no-color);
+        background-color: color(cubana-primary);
+      }
+      .cart-button {
+        border-radius: 0px;
+        color: color(no-color);
+        background-color: color(cubana-red);
+        font-size: 14px;
+        height: 38px;
+      }
+    }
+  }
+
+  .top-header-end {
+    background-color: color(cubana-primary);
+
+    .nav-item:nth-of-type(1) {
+      .nav-link {
+        background-color: color(cubana-red);
+        border-radius: 4px;
+        font-size: 10px;
+      }
+    }
+
+    .nav-link {
+      color: color(no-color) !important;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}
+
+.carousel {
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: color(cubana-carousel-indicator);
+  }
+
+  .carousel-inner {
+    img {
+      height: 80vh;
+    }
+    .carousel-caption {
+      text-align: left;
+      top: 50%;
+      transform: translate(0%, -50%);
+      position: absolute;
+      h3 {
+        font-size: 24px;
+        color: color(cubana-red);
+        display: inline;
+        padding: 0px 10px 2px 10px;
+        border: 2px solid color(cubana-red);
+      }
+      h5 {
+        font-size: 60px;
+        color: color(cubana-primary);
+      }
+      hr {
+        border: 1px solid color(cubana-primary);
+      }
+      p {
+        font-size: 36px;
+        color: color(cubana-primary);
+        span {
+          text-transform: uppercase;
+          color: color(cubana-red);
+        }
+      }
+      a {
+        color: color(no-color);
+        background-color: color(cubana-primary);
+        border-radius: 7px;
+        width: 200px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.cards {
+  .card {
+    position: relative;
+    overflow: hidden;
+    .sale {
+      span {
+        font-weight: bold;
+        color: color(no-color);
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 30px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        width: 100px;
+        display: block;
+        background-color: color(cubana-red);
+        -webkit-box-shadow: 0 2px 5px -3px black;
+        box-shadow: 0 2px 5px -3px black;
+        position: absolute;
+        left: -25px;
+        top: 10px;
+      }
+    }
+    .btn {
+      color: color(no-color);
+      background-color: color(cubana-primary);
+    }
+  }
+}
+
+.top-seller {
+  background-color: color(cubana-primary);
+  .col-2 {
+    h2 {
+      color: color(no-color);
+      background-color: color(cubana-red);
+      clip-path: ellipse(80px 65px at 50% 50%);
+      margin: 0px;
+    }
+  }
+}
+
+.new-arrivals {
+  .new-arrivals-slides {
+    .btn {
+      color: color(no-color);
+      background-color: color(cubana-primary);
+      strong {
+        font-size: 12px;
+      }
+      font-size: 8px;
+    }
+    .new-arrival-big {
+      .btn {
+        strong {
+          font-size: 24px;
+        }
+        font-size: 18px;
+      }
+    }
+    .new-arrival-small {
+      .row {
+        height: 100%;
+        .col-6 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+.trending-now {
+  background-color: color(cubana-gray);
+  .trending-cards {
+    .col-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .card {
+        position: relative;
+        overflow: hidden;
+        .sale-off {
+          padding: 20px;
+          .sale {
+            height: 50px;
+            span {
+              font-weight: bold;
+              color: color(no-color);
+              text-transform: uppercase;
+              text-align: center;
+              line-height: 30px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              width: 100px;
+              display: block;
+              background-color: color(cubana-red);
+              -webkit-box-shadow: 0 2px 5px -3px black;
+              box-shadow: 0 2px 5px -3px black;
+              position: absolute;
+              left: -25px;
+              top: 10px;
+            }
+          }
+          .discount {
+            span {
+              background-color: color(cubana-primary);
+              font-weight: bold;
+              font-size: 12px;
+              color: color(no-color);
+              padding: 5px 15px;
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+              position: absolute;
+              right: 5px;
+            }
+          }
+        }
+        .card-img {
+          width: 200px !important;
+          object-fit: cover;
+          height: 150px;
+          margin: 0 auto;
+        }
+        p {
+          font-size: 12px;
+          font-weight: bold;
+          padding: 0px 20px;
+          margin: 0px;
+        }
+        .new-like {
+          padding: 0px 20px;
+          height: 30px;
+          .new-arrival-button {
+            background-color: color(cubana-primary);
+            color: color(no-color);
+            font-size: 10px;
+            font-weight: bold;
+            padding: 0px 15px;
+            border-radius: 5px;
+          }
+          .like {
+            border-radius: 5px;
+            width: 50px;
+            font-size: 10px;
+            color: color(cubana-primary);
+            border-color: color(cubana-primary);
+            .far {
+              margin-right: 4px;
+            }
+          }
+          .like:hover {
+            background-color: color(cubana-primary);
+            color: color(no-color);
+            border-color: color(cubana-primary);
+          }
+        }
+        .price {
+          background-color: color(cubana-gray);
+          margin: 10px 0px;
+          padding: 10px 0px;
+          p {
+            margin: 0px;
+            span {
+              text-decoration: line-through;
+              color: color(cubana-primary);
+              opacity: 70%;
+            }
+          }
+        }
+        .icons-cart {
+          padding: 20px;
+          padding-top: 0px;
+          .icons {
+            display: flex;
+            text-align: center;
+            a {
+              margin: 0px 2.5px;
+              text-decoration: none;
+              color: color(cubana-primary);
+              img {
+                width: 27px;
+                height: 27px;
+                object-fit: fill;
+                background-color: color(cubana-primary);
+                padding: 5px;
+                border-radius: 5px;
+              }
+              p {
+                padding: 0px;
+                margin: 0px;
+              }
+            }
+          }
+          .cart {
+            button {
+              font-size: 14px;
+              background-color: color(cubana-red);
+              border: none;
+              color: color(no-color);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.weekly-offers {
+  .card-blue {
+    color: color(no-color);
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-body {
+      hr {
+        border-color: color(no-color);
+      }
+      .card-text {
+        line-height: 15px;
+        font-size: 12px;
+      }
+      .code {
+        font-size: 12px;
+        font-weight: bold;
+        span {
+          font-weight: lighter;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding: 5px 10px;
+          border: 1px dashed color(no-color);
+        }
+      }
+      .extra {
+        font-size: 12px;
+        background-color: color(cubana-gray);
+        display: inline;
+        color: color(cubana-primary);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      .amount {
+        margin-top: 10px;
+        span {
+          font-size: 10px;
+          background-color: color(cubana-red);
+          padding: 0px 5px;
+        }
+      }
+      .btn-sm {
+        font-size: 11px;
+        background-color: color(cubana-red);
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          margin: 10px;
+          a {
+            text-decoration: none;
+            color: color(no-color);
+          }
+        }
+        li:nth-of-type(1) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .card-red {
+    color: color(no-color);
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-body {
+      hr {
+        border-color: color(no-color);
+      }
+      .card-text {
+        line-height: 15px;
+        font-size: 12px;
+      }
+      .code {
+        font-size: 12px;
+        font-weight: bold;
+        span {
+          font-weight: lighter;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding: 5px 10px;
+          border: 1px dashed color(no-color);
+        }
+      }
+      .extra {
+        font-size: 12px;
+        background-color: color(cubana-gray);
+        display: inline;
+        color: color(cubana-red);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      .amount {
+        margin-top: 10px;
+        span {
+          font-size: 10px;
+          background-color: color(cubana-primary);
+          padding: 0px 5px;
+        }
+      }
+      .btn-sm {
+        font-size: 11px;
+        background-color: color(cubana-primary);
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          margin: 10px;
+          a {
+            text-decoration: none;
+            color: color(no-color);
+          }
+        }
+        li:nth-of-type(1) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.bg-parallax {
+  background-image: url(../img/bg-parallax.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .row {
+    padding: 48px 0px;
+    div {
+      min-height: 140px;
+      border-radius: 5px;
+      padding: 20px;
+      color: color(no-color);
+      a {
+        color: color(no-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.newsletter {
+  .container {
+    background-color: color(cubana-gray);
+    .left-section {
+      padding: 20px 15px;
+      h4 {
+        color: color(cubana-primary);
+      }
+      .form-inline {
+        position: relative;
+        input {
+          color: color(cubana-primary);
+          flex-grow: 1;
+        }
+        button {
+          color: color(no-color);
+          background-color: color(cubana-primary);
+          border-radius: 10px;
+          position: absolute;
+          right: 0px;
+          border-color: color(cubana-primary);
+        }
+      }
+    }
+    .right-section {
+      .row {
+        div {
+          border-left: 1px solid color(cubana-gray-dark);
+          padding: 20px 15px;
+          h5 {
+            color: color(cubana-primary);
+          }
+          small {
+            color: color(cubana-gray-dark);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-bottom: 40px;
+  .container {
+    border-bottom: 1px solid color(cubana-gray-dark);
+    h4 {
+      color: color(cubana-primary);
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+      li {
+        color: color(cubana-primary);
+        a {
+          color: color(cubana-gray-dark);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/**********************************
+            Product Page
+**********************************/
+.discover {
+  background-image: url(../img/discover-bg.jpg);
+}
+
+.discover__jewelery {
+  h1 {
+    font-weight: bold;
+    span {
+      color: color(cubana-red);
+    }
+  }
+}
+
+.bread--crumbs {
+  ol.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #6c757d;
+      content: ">";
+      cursor: pointer;
+    }
+
+    .breadcrumb-item {
+      a {
+        color: color(cubana-primary);
+        text-decoration: none;
+      }
+    }
+
+    .breadcrumb-item.active {
+      color: color(cubana-red) !important;
+    }
+  }
+}
+
+.product--search {
+  hr {
+    border-bottom: 1px solid color(cubana-gray);
+  }
+}
+
+.product--filters {
+
+  .filter--search {
+    .search__input {
+      border: none;
+      color: color(cubana-primary);
+      width: 100%;
+      padding-right: 25px;
+    }
+    .search__input::placeholder {
+      font-weight: bold;
+      color: color(cubana-gray-dark);
+    }
+    a {
+      position: absolute;
+      right: 0;
+      color: color(cubana-gray-dark);
+      opacity: 0.6;
+    }
+  }
+
+  .filter--collapse {
+    a {
+      color: color(cubana-primary);
+      text-decoration: none;
+    }
+
+    .collapse__outer {
+      list-style: none;
+      li {
+        margin: 10px 0px;
+      }
+    }
+
+    .collapse__inner {
+      list-style-type: none;
+      li:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2.5em;
+        height: 1em;
+        background-image: url("../img/minus-solid.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 2em;
+        font-size: 9px;
+      }
+    }
+  }
+
+  .filter--heading {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .filter--subheading {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .filter--font {
+    font-size: 12px;
+  }
+
+  .filter--red {
+    color: color(cubana-red);
+  }
+
+  .filter--button {
+    font-size: 9px;
+  }
+
+  .filter--checkboxes {
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  }
+
+  .filter--minmax {
+    input {
+      border-radius: 3px;
+      font-size: 9px;
+    }
+    button {
+      background-color: color(cubana-primary);
+      border-color: color(cubana-primary);
+    }
+  }
+
+  .filter--dropdown {
+    select {
+      background-color: #fff;
+      border: thin solid color(cubana-gray-dark);
+      border-radius: 2px;
+      display: inline-block;
+      width: 100%;
+      padding: 2px 0px;
+      font-size: 9px;
+      margin: 0;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: linear-gradient(
+          45deg,
+          transparent 50%,
+          color(cubana-gray-dark) 50%
+        ),
+        linear-gradient(135deg, color(cubana-gray-dark) 50%, transparent 50%);
+      background-position: calc(100% - 12px) calc(0.7em + 2px),
+        calc(100% - 7px) calc(0.7em + 2px);
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .filter--colors {
+    ul {
+      li {
+        margin-right: 5px;
+      }
+
+      li:nth-of-type(1) {
+        a {
+          color: #e5e0cf;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(2) {
+        a {
+          color: #000000;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(3) {
+        a {
+          color: #5560ae;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(4) {
+        a {
+          color: #5a4124;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(5) {
+        a {
+          color: #beab4e;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(6) {
+        a {
+          color: #58a055;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(7) {
+        a {
+          color: #d2d2d2;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(8) {
+        a {
+          color: #4a4b4a;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(9) {
+        a {
+          color: #dbcfc6;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(10) {
+        a {
+          color: #d26a34;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(11) {
+        a {
+          color: #db91c6;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(12) {
+        a {
+          color: #5d2497;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(13) {
+        a {
+          color: #be3036;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(14) {
+        a {
+          color: #c8c8c8;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(15) {
+        a {
+          color: #e0dfde;
+          text-decoration: none;
+        }
+      }
+      li:nth-of-type(16) {
+        a {
+          color: #edee44;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .filter--popular{
+    li{
+      margin: 0px 5px 5px 0px;
+      border: 1px solid color(cubana-border);
+      display: flex;
+      align-items: center;
+      a{
+        text-decoration: none;
+        padding: 0px 3px;
+        color: color(cubana-primary);
+      }
+    }
+  }
+
+}
